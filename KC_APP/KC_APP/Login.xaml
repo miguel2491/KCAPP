@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundImageSource="KC.jpg"
+             x:Class="KC_APP.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Margin="40,120,40,10">
+                <Image
+                    Source="BEWD.png"
+                    WidthRequest="120"
+                    HeightRequest="120"
+                    />
+            </StackLayout>
+            <StackLayout Margin="120,190,0,0">
+                <Entry    
+                    Placeholder="Usuario"
+                    TextColor="#DCF8C6"
+                    x:Name="User_"
+                    WidthRequest="150"
+                    HorizontalOptions="Center"
+                    PlaceholderColor="#DCF8C6"/>
+                <Entry
+                    Placeholder="Contraseña"
+                    x:Name="Pass_"
+                    WidthRequest="150"
+                    HorizontalOptions="Center"
+                    TextColor="#DCF8C6"
+                    PlaceholderColor="#DCF8C6"
+                    IsPassword="True"/>
+
+                <ActivityIndicator
+                     IsVisible="False"
+                     x:Name="Cator"
+                     />
+            </StackLayout>
+            <StackLayout Margin="160,0,100,10">
+                <Button
+                    BackgroundColor="#fff" 
+                    TextColor="#225374"
+                    WidthRequest="120"
+                    Text="Iniciar"
+                    VerticalOptions="Center"
+                    x:Name="btnLogin"
+                    Clicked="btnLogin_Clicked"
+                />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

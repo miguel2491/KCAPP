@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundImageSource="background2"
+             x:Class="KC_APP.Views.detail">
+    <ContentPage.Content>
+        <StackLayout Margin="0,60,0,0">
+            <Frame CornerRadius="100" 
+                       BackgroundColor="transparent"
+                       WidthRequest="200" HeightRequest="400"
+                       Margin="5,30,5,5"
+                       HorizontalOptions="Center"
+                       Padding="0"
+                       IsClippedToBounds="True">
+                <Image x:Name="logo"
+                       Source="icon.png"
+                       WidthRequest="250"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+            </Frame>
+            <StackLayout Margin="100,10,100,10">
+                <Button
+                    Text="Sincronizar"
+                    BackgroundColor="#66b2fe"
+                    TextColor="WhiteSmoke"
+                    x:Name="btnSincro"
+                    Clicked="btnSincro_Clicked"
+                    />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

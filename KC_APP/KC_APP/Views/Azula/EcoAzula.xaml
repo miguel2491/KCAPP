@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundImageSource="background2"
+             x:Class="KC_APP.Views.Azula.EcoAzula">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image 
+                    Source="iconAzula.png"
+                    WidthRequest="100"
+                    />
+                <StackLayout>
+                    <TableView Intent="Form">
+                        <TableRoot>
+                            <TableSection Title="Azula Salud">
+                                <ImageCell ImageSource="BEWD.png"  Text="Aceite" Detail="Estado Actual del Aceite " />
+                                <ImageCell ImageSource="BabyBlue.png"  Text="Castrol 20w" Detail="Kilometraje Actual " />
+                                <ImageCell ImageSource="iko.png"  Text="Aceite 90w" Detail="Aceite De Velocidades " />
+                                <ImageCell ImageSource="Blue.png"  Text="Anticongelante" Detail="Anticongelante " />
+                            </TableSection>
+                        </TableRoot>
+                    </TableView>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

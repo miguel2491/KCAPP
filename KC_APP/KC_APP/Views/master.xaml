@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundImageSource="background2"
+             xmlns:local="clr-namespace:KC_APP;assembly=KC_APP"
+             x:Class="KC_APP.Views.master" Title="Master">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout
+                Margin="0,5,0,0">
+                <Frame CornerRadius="100" 
+                       BackgroundColor="transparent"
+                       WidthRequest="78" HeightRequest="78"
+                       Margin="5,80,5,50"
+                       HorizontalOptions="Center"
+                       Padding="0"
+                       IsClippedToBounds="True">
+                    <Image x:Name="logo"
+                           Source="iko.jpg"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                </Frame>
+                <TableView Intent="Form">
+                    <TableRoot>
+                        <TableSection Title="KC">
+                            <ImageCell ImageSource="lista.png" Text="Lista" Detail="Listado" x:Name="btnListado" Tapped="btnListado_Tapped"/>
+                            <ImageCell ImageSource="barcode.png"  Text="Nuevo Producto" Detail="Agregar Nuevo Producto" x:Name="btnProductoNuevo" Tapped="btnProductoNuevo_Tapped"/>
+                            <ImageCell ImageSource="lugar.png"  Text="Establecimiento" Detail="Nuevo Lugar" x:Name="btnLugar" Tapped="btnLugar_Tapped"/>
+                            <ImageCell ImageSource="iconAzula.png"  Text="Azula EcoSport" Detail="Azula" x:Name="btnAzulaEco" Tapped="btnAzulaEco_Tapped"/>
+                        </TableSection>
+                    </TableRoot>
+                </TableView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

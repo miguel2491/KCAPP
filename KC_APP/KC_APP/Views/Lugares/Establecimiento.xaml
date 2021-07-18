@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="KC_APP.Views.Lugares.Establecimiento">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="5,0,5,20">
+                <maps:Map x:Name="Mapx" WidthRequest="300"  />
+                <Entry 
+                    x:Name="Nombre" 
+                    Placeholder="Lugar"
+                    TextColor="Black"
+                    BackgroundColor="White"
+                    PlaceholderColor="Black"
+                    />
+                <StackLayout Margin="120,0,120,0">
+                    <Button
+                        BackgroundColor="#66b2fe" 
+                        TextColor="White"
+                        Text="Registrar"
+                        x:Name="btn_Guardar"
+                        Clicked="btn_Guardar_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
